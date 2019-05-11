@@ -1,0 +1,10 @@
+for i in *
+do
+  mkdir   $i/week1
+  mkdir   $i/week2
+  mkdir   $i/week3
+  mkdir   $i/week4
+  mkdir   $i/week5
+  mkdir   $i/week6
+  mkdir   $i/week7
+done

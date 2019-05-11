@@ -1,0 +1,15 @@
+
+'ve just finished my first notebook for the Data Structures class and thought I'd pass it along to you as an example of some of the cool things you can do.
+
+Notice that it's got:
+Shell scripts (to make sure the right software is installed),
+Python code,
+Text for commentary (including LaTex for the more mathematical stuff),
+Images, 
+Function plots (using the Python matplotlib), and
+Youtube videos.
+And it runs in slideshow mode, so that it's sort of like Powerpoint ...
+
+I think especially for the MS classes -- because of the long Friday nights and Saturdays -- having something that is visually appealing as well as "meaty" is going to be important to capture the students' attentions.
+
+

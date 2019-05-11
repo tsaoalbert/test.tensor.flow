@@ -1,0 +1,102 @@
+#!/usr/bin/env python
+class Node:
+    def __init__(self,initdata):
+        self.data = initdata
+        self.next = None
+
+    def getData(self):
+        return self.data
+
+    def getNext(self):
+        return self.next
+
+    def setData(self,newdata):
+        self.data = newdata
+
+    def setNext(self,newnext):
+        self.next = newnext
+
+
+class UnorderedList:
+
+    def __init__(self):
+        self.count = 0
+        self.head = None
+
+    def isEmpty(self):
+        return self.count == 0
+        #return self.head == None
+            
+    def add(self,item):
+        self.count += 1
+        temp = Node(item)
+        temp.setNext(self.head)
+        self.head = temp
+        
+    def __str__(self):
+        ans = []
+        current = self.head
+        while current != None:
+            ans.append ( current.getData() )
+        return ans
+        
+    def length(self): 
+        return self.count
+
+    def search(self,item):
+        current = self.head
+        found = False
+        while current != None and not found:
+            if current.getData() == item:
+                found = True
+            else:
+                current = current.getNext()
+
+        return found
+                
+    def remove(self,item):
+        current = self.head
+        self.count -= 1
+        previous = None
+        found = False
+        while current!=None and not found:
+            if current.getData() == item:
+                found = True
+            else:
+                previous = current
+                current = current.getNext()
+
+        if found:
+          if previous == None:
+            self.head = current.getNext()
+          else:
+            previous.setNext(current.getNext())
+        else:
+          print ( "Cannot remove %d" % (item) )
+            
+mylist = UnorderedList()
+
+mylist.add(31)
+mylist.add(77)
+mylist.add(17)
+mylist.add(93)
+mylist.add(26)
+mylist.add(54)
+
+print("length=", mylist.length())
+print("search(93)=", mylist.search(93))
+print("search(100)=", mylist.search(100))
+
+mylist.add(100)
+print("search(100)=", mylist.search(100))
+print("length=", mylist.length())
+
+mylist.remove(54)
+print("length=", mylist.length())
+mylist.remove(93)
+print("length=", mylist.length())
+mylist.remove(31)
+print("length=", mylist.length())
+print("search(93)=%d"% (mylist.search(93)))
+mylist.remove(93)
+print("myList=%s"% (mylist))

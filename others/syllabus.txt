@@ -1,0 +1,270 @@
+The grade will be soly based on the 7 homework assignments, one per week.
+The starter codes with detailed instructions will be provided.
+
+No midterm and final exam. No project presentation.
+
+Late homework policy: Total 72 extra hours can be used for the late submission. 
+
+
+
+Week1: introduction 
+Slides/Jupter notebook.
+
+Object-Oriented Programming in Python: Defining Classes
+  A Fraction Class
+  Inheritance: Logic Gates and Circuits
+
+HW#1:
+  Reading Chapter 1.
+
+  A.  Extension of the Fraction Class (see Programming Exercises: 1-9)
+  B.  Extension of the Fraction Class (see Programming Exercises: 1-9)
+  (Starter programs will be given.)
+
+
+
+Week2: Analysis
+Slides/Jupter notebook.
+topic: 
+    1. Big-O, 
+    2. Anagram Detection Example, 
+    3. Performance of Python Data Structures = Lists, Dictionaries
+
+
+HW#2:
+A. Devise experiment to verify that 
+          1. verify that the list index operator is O(1)
+          2. verify that get item and set item are O(1) for dictionaries.
+          3. compares the performance of the del operator on lists and dictionaries.
+  (Starter programs will be given.)
+
+B. Given a list of numbers in random order, 
+      1. write an algorithm that works in O(nlog(n)) to find the kth smallest number in the list.
+      2. (Optional) write an algorithm that works in O(n) to find the kth smallest number in the list.
+
+
+1st weekend:
+  Review HW
+
+
+Week3:  Basic Data Structures
+Slides/Jupter notebook.
+Topic: 
+    Implementing Stack/Queue/Deque in Python list
+    Example: Infix, Prefix and Postfix Expressions
+    Implementing Unordered/Ordered Linked List; 
+    Analysis of Unordered/Ordered Linked List;
+    
+
+HW#3:
+
+      1. Implement a direct infix evaluator that combines both infix-to-postfix conversion and 
+      2. Modify the UnorderedList class as follows:
+         * allow duplicates
+         * remove method can work correctly on non-existing items 
+         * Improve the time of length method to O(1)
+         * Implement __str__ method so that lists are displayed the Python way 
+         * Implement the remaining operations defined in the UnorderedList ADT 
+              (append, index, pop, insert).
+      3. Implement the remaining operations defined in the OrderedList ADT.
+
+      4. Use linked lists to implement queue, deque, and deque.
+
+      5. Use doubly linked list to implement a queue that would have an average performance of O(1) 
+        for enqueue and dequeue operations.
+
+
+
+Week4: Recursion
+Slides/Jupter notebook.
+Topic:
+  Recursion vs Iteration
+  Three Laws of Recusion
+  Example: Tower of Hanoi, Maze, Dynamic Programming
+
+HW#4:
+
+    * Write both recursive and iterative function to compute the factorial of a number.
+        How does the performance of the recursive function compare to that of an iterative version?
+    * Write both  recursive and iterative function to compute the Fibonacci sequence. 
+        How does the performance of the recursive function compare to that of an iterative version?
+
+    * Modify the recursive tree program to produce a more realistic looking tree with various brnach length/thickness, and braching angles.
+
+    * Use DP algorithm to solve the house robber problem.
+
+
+Week5: Sorting and Searching
+  Slides/Jupter notebook.
+  Topic:
+      Sequential vs Binary Search
+      Hashing
+        Hash Functions/Collision Resolution
+      Sorting:
+        Incremental approach O(n^2): Selection/Insertion/Shell Sort
+        Divided-and-Conquer  approach O(nlog n): Merge/Quick Sort
+
+
+HW#5:
+  1. Use random ordered integers to analyze the binary search functions given in the text 
+     (recursive and iterative). 
+
+  2. Implement the following for the hash table Map ADT implementation.
+    len method (__len__) 
+    in method (__contains__) 
+    del method using the following for collision resolution
+          chaining 
+          open addressing 
+          quadratic probing 
+
+    3. Implement the mergeSort function without using the slice operator.
+  
+    4. Using a random number generator, create a list of 500 integers. Perform a benchmark analysis using some of the sorting algorithms from this chapter. What is the difference in execution speed?
+
+
+Week6: Trees and Tree Algorithms
+  Topics:
+     Tree Traversal: in-order, pre-order, post-order 
+     Priority Queues with Binary Heaps
+     Binary Search Trees:
+     Balnaced Binary Search Trees: AVL/Red-Black Tree
+      
+HW#6:
+  Extend the buildParseTree function to handle 
+        * expressions with no spaces between every character.
+        * boolean statements (and, or, and not). 
+
+    Using the buildHeap method, write a sorting function that can sort a list in O(nlogn) time.
+
+    Implement a binary heap as a max heap.
+
+    Using the BinaryHeap class, implement a new class called PriorityQueue that 
+      implement the constructor, plus the enqueue and dequeue methods.
+
+
+Week7: Graphs and Graph Algorithms 
+  Topics:
+    Graph ADT
+    implementation of Adjacency Matrix and List
+    BFS: Knights' Tour Analysis
+    DFS: 
+      topological sorting,
+      Strongly connected componetns
+    Short Path Problems and Dijkstra's Algorithm
+    Minmum Spanning TreeProblems and the Prim's/Kruskal Algorithm
+
+HW#7:
+    * Modify the depth first search function to produce 
+        a topological sort.
+        strongly connected components.
+    * Using breadth first search revise the maze program from the recursion chapter 
+      to find the shortest path out of a maze.
+    * Three Water-Jug problems.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+===========
+Problem Solving with Algorithms and Data Structures using Python by Bradley N. Miller, David L. 
+
+week 1: (Chapter 1: Introduction)
+Computer Sciece, Programming, Data Structures, ADT, Algorithms
+Python Built-in (Atomic/Collection) Data Types, I/O, Constrol Structure, functions, Classes/Inheritance
+Assignment #1:
+
+Project A: Sudoku puzzle, 5W3S 
+
+Week 2: (Chapter 2: Analysis)
+Algorithm Analysis, Big-O Notation (Example: Anagram)
+Performance of Python Data Structures: List and Dictionary
+Assignment #2:
+
+week 3:  (Chapter 3: Basic (linear) DS
+Stack (FILO)/Queue (FIFO). Example:Balanced Symbols, Hot Potato (Printing Tasks)
+Deque (double-ended queue): (Palindrome-Checker) 
+(Unordered/Ordered) Linked Lists. Implementation (Node, List Class)
+Assignment #3: USACO 
+
+Project B:
+K’th Smallest/Largest Element in Unsorted Array (Worst Case Linear Time)
+https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-3-worst-case-linear-time/
+K’th Smallest/Largest Element in Unsorted Array | (Expected Linear Time)
+https://www.geeksforgeeks.org/kth-smallestlargest-element-unsorted-array-set-2-expected-linear-time/
+>>> np.partition(a, 4)[4]
+
+
+
+
+Week 4: (Chapter 4: Recursion)
+Iteration vs. Recursion: Example: sum of numbers, 
+Implementation: three laws, Stack
+
+Complex examples: Tower of Hanoi, Maze Routing
+
+Assignment #4:  USACO
+
+week 5: (Chapter 5: Sorting and Searching)
+Sequential/Binary Search, Hash and Python Map
+Selection/Insertion/Merge/Quick Sort
+
+Assignment #5:
+
+Project C: 3-Jugs Water
+
+week 6: (Chapter 6)
+Vocabulary and Definitions, Nodes&References, Tree Traversals
+Priority Queueswith Binary Heaps
+Binary Search Tree (BST), Balanced BST (AVL Tree)
+
+Assignment #6:
+
+week 7: (Chapter 7)
+Graph ADT/implementation, 
+BFS (Word Ladder)
+DFS (Knight's Tour)
+SPT/Dijkstra's
+MST/Prim's 
+
+Assignment #7:
+
+
+
+Look at this link: http://interactivepython.org/runestone/static/pythonds/index.html
+I find this link to be very useful in helping us structure our B.Sc Data structures class. 
+
+For the M.Sc use most of the structures and you can supplement with more "difficult" examples. 
+The main thing is to use Python.
+The Jupyter Notebook we are using is from Anaconda . You can download it from the web. 
+
+

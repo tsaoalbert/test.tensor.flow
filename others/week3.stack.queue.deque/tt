@@ -1,0 +1,6 @@
+list_del = timeit.Timer("for i in L: lis.remove(i)", "from __main__ import lis,L")
+    time_list_del = list_del.timeit(number=num_repeats)
+    time_dict_del = dict_del.timeit(number=num_repeats)
+
+    print("%8d: %15.5f %15.5f " %(n, time_list_del, time_dict_del  ))
+    n += inc

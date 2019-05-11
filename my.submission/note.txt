@@ -1,0 +1,7 @@
+
+
+In the experiment, there could many other processes running on the computer 
+at the same time. Also, the availability of the resources like free memory 
+changes all the time. These factors add variations to our measurement of the 
+individual program performance.
+

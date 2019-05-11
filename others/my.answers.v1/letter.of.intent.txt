@@ -1,0 +1,10 @@
+The list is in the order of my preference and expertise.
+
+CSCI-551: “Programming Languages”
+CSCI-565: “Data Analysis and Analytics”
+CSCI-561: “Design and Analysis of Algorithms”
+CSCI-555: “Operating Systems”
+CSCI-571: “Foundations of Artificial Intelligence”
+CSCI-580: “Database Systems Principles”
+CSCI-560: “Distributed Systems”
+CSCI-535: “Secure Systems”

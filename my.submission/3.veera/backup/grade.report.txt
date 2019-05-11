@@ -1,0 +1,22 @@
+Week 1: 
+HW1 Grade:  100/100
+In-Class Exercises 1-3 (first meeting) Grade: 0/100  (Plagiarism)
+
+Week 2: Average: 8/100
+Hw2, Grade: 25/100 
+In-Class Exercise #1, Grade:  0/100
+In-Class Exercise #2, Grade: 0/100
+You can get back the credit by re-doing all the works and have no more plagiarism
+
+
+Week 3: Average:  19/100
+Hw3, Grade:  38/100
+xxx 3.1 (10/10%) Modify the infix-to-postfix algorithm so that it can handle errors.
+xxx 3.2 (10/10%) Modify the postfix evaluation algorithm so that it can handle errors.
+
+(18/30%) Modify the unorderedList class as follows:
+xxx remove method can work correctly on non-existing items
+xxx Improve the time of length method to O(1)
+xxx Implement str method so that unorderedList are displayed the Python way
+
+In-Class Exercise #3, Grade:  0/100

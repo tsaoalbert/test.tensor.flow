@@ -1,0 +1,12 @@
+In.class.exercise.3 80/100
+credits for Q# 1,2,3,5,6,9,11,12
+
+HW#3:  71/100
+Q#1: 
+-10pt for * 3.1
+-5pt for incorrect results when parsing 1*2
+-6pt for 
+ Modify the unorderedList class as follows: 
+* allow duplicates
+-8pt for 
+ Use doubly linked lists to implement queue, stack, and deque that would have have an average performance of O(1)  for operations of adding or removing operations. Hints: implement deque first, then you can build stack and queue on top of deque

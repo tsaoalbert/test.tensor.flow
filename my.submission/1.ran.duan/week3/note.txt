@@ -1,0 +1,20 @@
+Week3: Average:  53
+HW#3:   40/100
+10/10 3.1 
+10/10 3.2 
+10/10 3.3 
+(30%) Modify the unorderedList class as follows:
+6/6 Implement __str__ method so that unorderedList are displayed the Python way
+4/6 Implement the remaining operations defined in the UnorderedList ADT  ...
+0 for for missing or incorrect works
+in.class.exercise.3:  65/100
+10/10 Q1
+10/10 Q2
+10/10 Q3
+10/10 Q?: Evaluate the following postfix expressions ...
+10/10 Q?: With an additional tail pointer in the singly linked
+5/10: Q?: (Repeat the above question for the doubly linked lists.)
+10/10: last Question 
+
+
+

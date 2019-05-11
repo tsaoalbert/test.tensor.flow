@@ -1,0 +1,30 @@
+You could re-submit the work for a higher grade.
+Let me know if you need more help.
+
+Week 1: 
+
+HW1 Grade:   100/100 
+In-Class Exercises 1-3 (first meeting) Grade:  0/100  (Plagiarism)  
+
+Week 2:  Average:  8/100
+Hw2, Grade: 25/100 
+In-Class Exercise #1, Grade:   0/100 
+In-Class Exercise #2, Grade:   0/100 
+
+
+Week 3:  Average:  23/100
+
+Hw3, Grade: 0/100 
+  .rtf files are not acceptable.
+  All the submissions have to be in .ipynb
+In-Class Exercise #3, Grade:   45/100 
+
+Week 4:  Average:  90/100
+Hw4, Grade: 90/100 
+  -10pt for missing the answers to the following question in Q1 and Q2.
+  How does the performance of the recursive function compare to that of an iterative version
+In-Class Exercise #2, Grade:   90/100 
+  -10pt for missing the answers to the following question in Q1 .
+  How does the performance of the recursive function compare to that of an iterative version
+
+

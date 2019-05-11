@@ -1,0 +1,9 @@
+
+1 introduction to Python and Algorithms
+2 Algorithm Analysis and Big-O notation
+  Performance of Python Data Structures (Lists/Dictionaries) 
+3 stack queue deque
+4 recursion
+5 search hash sort
+6 parse tree heap BST avl
+7 graph

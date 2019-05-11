@@ -1,0 +1,34 @@
+
+Week 3:  Average:  23/100
+
+
+
+Hw3, Grade: 0/100
+
+* 3.1 (10/10%) Modify the infix-to-postfix algorithm so that it can handle errors.
+
+* 3.12 (10/10%) Extend the program from Listing 2.15 to handle palindromes with spaces. For example, I PREFER PI is a palindrome that reads the same forward and backward if you ignore the blank characters.
+
+
+
+(30%) Modify the unorderedList class as follows: 
+* 0/6 allow duplicates
+* 0/6 remove method can work correctly on non-existing items
+* 0/6 Improve the time of length method to O(1)
+* 6/6 Implement __str__ method so that unorderedList are displayed the Python way
+* 6/6 Implement the remaining operations defined in the UnorderedList ADT (append, index, pop, insert).
+
+
+(3/10%) Use doubly linked lists to implement queue, stack, and deque that would have have an average performance of O(1)  for operations of adding or removing operations. Hints: implement deque first, then you can build stack and queue on top of deque
+
+
+
+
+Hw3, Grade: 45/100
+* (10/10%)   3.1
+* (10/10%)   3.12
+* (6/6%  ) Implement __str__ method so that unorderedList are displayed the Python way
+* (6/6%  ) Implement the remaining operations defined in the UnorderedList ADT 
+* (10/10%) Explain how a singly linked list with both head ....
+* (3/10% ) Use doubly linked lists to implement queue, stack, and deque  ...
+* 0 for all missing or incorrect works.

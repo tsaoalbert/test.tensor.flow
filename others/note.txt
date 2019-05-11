@@ -1,0 +1,89 @@
+
+Look at this link: http://interactivepython.org/runestone/static/pythonds/index.html
+I find this link to be very useful in helping us structure our B.Sc Data structures class. 
+
+For the M.Sc use most of the structures and you can supplement with more "difficult" examples. 
+The main thing is to use Python.
+The Jupyter Notebook we are using is from Anaconda . You can download it from the web. 
+
+
+Listed are the topics for 7-week. (Half done with help in classes, the rest done by themselves) 
+1. Python Review (Assume Anaconda/Python was already installed.)  
+2. Algorithmic Analysis: 
+3. Basic Data Structures: Queues; Deques, Lists, Linked Lists                  
+   (Optional) Advanced data structures: skip lists, Amortized analysis, Fibonacci heaps)
+4. Recursion,  Searching/sorting
+5. Trees and Tree Algorithms: Binary Heap, (Balanced) Binary search tree
+6. Graphs and Graph Algorithms: BFS, DFS, shortest path/spanning tree algorithms
+7. (Optional) Distributed Algorithms,  NP-completeness)
+
+Textbooks: 
+  1. (Required) Problem Solving with Algorithms and Data Structures using Python
+  2. (Recommended ) Algorithms Illuminated
+  3. (Recommended ) Data Structures and Algorithms in Python
+
+  Besides emails, I will also hold virtual office hours online using Goolge/Skype/Zoom to answer their questions by
+  discussions.
+
+  I will also issue surveys before the class starts to get a better idea of further adjustments. 
+
+  Need to work on the detailed class schedules for the two weekends.
+
+--------
+
+Here is my rough sketch:
+Friday:
+Session-1: (1 1/2 hr): Installation of Anaconda and MS VS Code for Python) Show how to use Jupyter Notebook and VS Code.
+                                  Introduction to Python using the OS and System modules.
+Break for 15 mins
+Session-2 (1.5 hr) -  Introduction to memory mgmt - show recursion problems with Python
+                      Introduction to numpy - multi-dimensional array
+                      Work examples with numpy
+
+Saturday:   still thiking about it - memory management schemes and using multiprocessing - Code some memory paging policies using numpy as a simulation of memory
+Map and Reduce , Pool - how to make use of all the cpus
+
+Assignments:  to be submitted to Moodle (assignment software) before 
+ Write a detailed description on what happens on power up .. up to the booting of an OS
+Look for a paper on some OS (other than linux, unix, mac, windows) and 
+prepare a 15 min presentation on it.
+Coding assignment: - finish the memory paging schemes
+
+
+2nd weekend
+Friday:
+Process Management
+File management
+Saturday;
+Build a simple file system with a console based on inodes
+Include some network programming for RPC
+Some notion of distributed computing
+
+Main goal is to provide an introduction (easy) for the first two hours, and then slowly introduce advanced topics.
+Everything is to done in Python.
+
+Things are still in development
+
+
+
+
+
+
+
+
+
+For the Friday class
+     For the first hour I like to introduce the Python Jupyter Notebook and Python 
+     to the class together. 
+
+
+Two more points
+* The content of course obviously has to be light and carefully designed for  
+part-time graduate students. I have been teaching some short courses for full-time 
+students, and know that it is challenging, in particular for a part-time student.
+
+* Other courses are not taught at the graduate level, but I am comfortable to 
+ take some of them with my academic level, teaching experience, as well as 
+  enough amount of time for preparation.  Maybe i can get involved in the curriculum design before actually teaching them in the future.
+
+

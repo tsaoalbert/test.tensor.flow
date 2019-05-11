@@ -1,0 +1,110 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1504\cocoasubrtf830
+{\fonttbl\f0\fswiss\fcharset0 Helvetica;\f1\fnil\fcharset0 Menlo-Regular;\f2\fnil\fcharset0 HelveticaNeue;
+\f3\fmodern\fcharset0 Courier;}
+{\colortbl;\red255\green255\blue255;\red91\green40\blue180;\red27\green31\blue34;\red203\green35\blue57;
+\red255\green255\blue255;\red109\green109\blue109;\red91\green40\blue180;\red0\green0\blue0;\red0\green0\blue0;
+\red27\green31\blue34;}
+{\*\expandedcolortbl;;\cssrgb\c43529\c25882\c75686;\cssrgb\c14118\c16078\c18039;\cssrgb\c84314\c22745\c28627;
+\cssrgb\c100000\c100000\c100000;\cssrgb\c50196\c50196\c50196;\cssrgb\c43529\c25882\c75686;\cssrgb\c0\c0\c0;\cssrgb\c0\c0\c0;
+\cssrgb\c14118\c16078\c18039;}
+\margl1440\margr1440\vieww10800\viewh8400\viewkind0
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0\fs24 \cf0 from pythonds.basic.stack import Stack\
+\
+def infixToPostfix(infixexpr):\
+    prec = \{\}\
+    prec["*"] = 3\
+    prec["/"] = 3\
+    prec["+"] = 2\
+    prec["-"] = 2\
+    prec["("] = 1\
+    opStack = Stack()\
+    postfixList = []\
+\pard\pardeftab720\sl400\partightenfactor0
+\cf0  if 
+\f1 \cf2 \expnd0\expndtw0\kerning0
+balance(
+\f0 \cf0 \kerning1\expnd0\expndtw0 infixexpr)\
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+\cf0     tokenList = infixexpr.split()\
+\
+    for token in tokenList:\
+        if token in "ABCDEFGHIJKLMNOPQRSTUVWXYZ" or token in "0123456789":\
+            postfixList.append(token)\
+        elif token == '(':\
+            opStack.push(token)\
+        elif token == ')':\
+            topToken = opStack.pop()\
+            while topToken != '(':\
+                postfixList.append(topToken)\
+                topToken = opStack.pop()\
+        else:\
+            while (not opStack.isEmpty()) and \\\
+               (prec[opStack.peek()] >= prec[token]):\
+                  postfixList.append(opStack.pop())\
+            opStack.push(token)\
+\
+    while not opStack.isEmpty():\
+        postfixList.append(opStack.pop())\
+    return " ".join(postfixList)\
+\
+
+\f2\fs28 \cf3 \expnd0\expndtw0\kerning0
+\outl0\strokewidth0 \strokec3 \
+
+\itap1\trowd \taflags1 \trgaph108\trleft-108 \trcbpat5 \trbrdrt\brdrnil \trbrdrl\brdrnil \trbrdrt\brdrnil \trbrdrr\brdrnil 
+\clvertalt \clshdrawnil \clwWidth3867\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx4320
+\clmrg \clvertalt \clshdrawnil \clwWidth3867\clftsWidth3 \clbrdrt\brdrnil \clbrdrl\brdrnil \clbrdrb\brdrnil \clbrdrr\brdrnil \clpadl200 \clpadr200 \gaph\cellx8640
+\pard\intbl\itap1\pardeftab720\sl400\partightenfactor0
+
+\f1\fs24 \cf4 \strokec4 def\cf3 \strokec3  \cf7 \strokec7 balance\cf3 \strokec3 (
+\f3 \cf8 \outl0\strokewidth0 expr
+\f1 \cf3 \outl0\strokewidth0 \strokec3 ):\
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf8 \outl0\strokewidth0  """ This method checks if the parenthesis is balanced or not.\
+    Example could be:\
+        ()(), (()), (())() are all balanced.\
+        ((), ((()()) are not balanced """\
+\pard\intbl\itap1\pardeftab720\sl400\partightenfactor0
+
+\f1 \cf3 \outl0\strokewidth0 \strokec3 \
+\pard\intbl\itap1\pardeftab720\sl280\partightenfactor0
+
+\f3 \cf9 \strokec9 if not expr:\
+        return False\
+    expr = expr.strip()\
+\
+    parenList = []\
+    for e in expr:\
+        if e == '(' or e == ')':\
+            parenList.append(e)\
+    
+\f1 \cf10 \outl0\strokewidth0 paren
+\f3 \cf9 \outl0\strokewidth0 \strokec9  = ''.join(parenList)\
+    S = Stack()\
+    balanced = True\
+    index = 0\
+    while index < len(paren):\
+        if paren[index] == '(':\
+            S.push(paren[index])\
+        else:\
+            if S.is_empty():\
+                balanced = False\
+                break\
+            else:\
+                S.pop()\
+        index += 1\
+    if not S.is_empty():\
+        balanced = False\
+    return balanced\
+\pard\intbl\itap1\pardeftab720\sl400\partightenfactor0
+
+\f1 \cf3 \strokec3 \cell 
+\pard\intbl\itap1\cell \lastrow\row
+\pard\tx720\tx1440\tx2160\tx2880\tx3600\tx4320\tx5040\tx5760\tx6480\tx7200\tx7920\tx8640\pardirnatural\partightenfactor0
+
+\f0 \cf0 \kerning1\expnd0\expndtw0 \outl0\strokewidth0 print(infixToPostfix("A * B + C * D"))\
+print(infixToPostfix("( A + B ) * C - ( D - E ) * ( F + G )"))\
+}
